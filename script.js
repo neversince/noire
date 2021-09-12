@@ -51,7 +51,7 @@ class Environment {
   createCamera() {
 
     this.camera = new THREE.PerspectiveCamera( 65, this.container.clientWidth /  this.container.clientHeight, 1, 10000 );
-    this.camera.position.set( 0,0, 100 );
+    this.camera.position.set( 0,10, 100 );
 
   }
 

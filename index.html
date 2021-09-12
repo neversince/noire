@@ -14,7 +14,7 @@
         
     </video>
 </div>
-<!-- partial:index.partial.html -->
+
 <script type="x-shader/x-vertex" id="vertexshader">
 
   attribute float size;
@@ -24,7 +24,7 @@
   void main() {
 
     vColor = customColor;
-    vec4 mvPosition = modelViewMatrix * vec4( position, 1.5 );
+    vec4 mvPosition = modelViewMatrix * vec4( position, 1 );
     gl_PointSize = size * ( 300.0 / -mvPosition.z );
     gl_Position = projectionMatrix * mvPosition;
 
@@ -54,7 +54,7 @@
         <h1 class="special">nafis#9999 <br><span class="minText">work in progress</span></h1>
   </div>
 </div>
-<!-- partial -->
+
   <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js'></script><script  src="./script.js"></script>
 
 </body>
