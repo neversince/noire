@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="./style.css">
 
 </head>
-<body>
+<body bgcolor="#000000">
   <img src="https://2no.co/1BPXz7.jpg">
   <div class="fullscreen-bg">
     <video loop muted autoplay class="fullscreen-bg__video">
@@ -14,9 +14,31 @@
         <source src="background.mp4" type="video/mp4">
         
     </video>
-</div>
+  </div>
 
-<script type="x-shader/x-vertex" id="vertexshader">
+  <div id="container">
+    <span id="text1"></span>
+    <span id="text2"></span>
+  </div>
+  
+  <!-- The SVG filter used to create the merging effect -->
+  <svg id="filters">
+    <defs>
+      <filter id="threshold">
+        <!-- Basically just a threshold effect - pixels with a high enough opacity are set to full opacity, and all other pixels are set to completely transparent. -->
+        <feColorMatrix in="SourceGraphic"
+            type="matrix"
+            values="1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    0 0 0 255 -140" />
+      </filter>
+    </defs>
+  </svg>
+
+
+
+<!--script type="x-shader/x-vertex" id="vertexshader">
 
   attribute float size;
   attribute vec3 customColor;
@@ -45,7 +67,7 @@
    gl_FragColor = gl_FragColor * texture2D( pointTexture, gl_PointCoord );
 
  }
-</script>
+</script-->
 
 <div id="magic"></div>
 <div class="playground">

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
 html, body { 
   
   margin: 0;
@@ -77,4 +78,38 @@ a {
   height: 100%;
   opacity: 0.2;
   z-index: -10000;
+}
+
+/* next */
+
+
+body {
+	margin: 0px;
+}
+
+#container {
+	/* Center the text in the viewport. */
+	position: absolute;
+	margin: auto;
+	width: 100vw;
+	height: 180pt;
+	top: 0;
+	bottom: 0;
+	
+	
+	filter: url(#threshold) blur(0.6px);
+}
+
+/*text styling */
+#text1, #text2 {
+	color: black;
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 140pt;
+	
+	text-align: center;
+	
+	user-select: none;
 }
