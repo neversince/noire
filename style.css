@@ -63,7 +63,7 @@ a {
 #videoBG {
   position:fixed;
   z-index: -1;
-  opacity: .4;
+  opacity: .75;
 }
 @media (min-aspect-ratio: 16/9) {
   #videoBG {
