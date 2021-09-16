@@ -3,10 +3,10 @@ window.addEventListener('load', checkJSLoaded)
 function checkJSLoaded() {
 
 var sound = new Howl({
-  src: ['music.mp3'],
+  src: ['wondercave.mp3'],
   autoplay: true,
   loop: true,
-  volume: 1,
+  //volume: 1,
 });
 
 // Clear listener after first call.
