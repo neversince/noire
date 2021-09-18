@@ -6,7 +6,7 @@ var sound = new Howl({
   src: ['wondercave.mp3'],
   autoplay: true,
   loop: true,
-  volume: .7,
+  volume: .5,
 });
 
 // Clear listener after first call.
