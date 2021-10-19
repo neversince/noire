@@ -409,8 +409,8 @@ const elts = {
   
   // The strings to morph between
   const texts = [
-  "NOIRE",
-  "BLACK"];
+  "HI",
+  "ALEXA"];
   
   
   // Controls the speed of morphing.
