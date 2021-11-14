@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&display=swap');
 html, body { 
   
   margin: 0;
@@ -102,14 +103,17 @@ body {
 
 /*text styling */
 #text1, #text2 {
-	color: black;
+	/*color: rgb(153,0,0);*/
 	position: absolute;
 	width: 100%;
 	display: inline-block;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Crimson Text', serif;;
 	font-size: 140pt;
 	
 	text-align: center;
 	
 	user-select: none;
+  -webkit-text-stroke:1px white;
+  -webkit-text-fill-color:black;
+
 }
