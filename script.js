@@ -415,7 +415,7 @@ const elts = {
   
   // Controls the speed of morphing.
   const morphTime = 2;
-  const cooldownTime = 1;
+  const cooldownTime = 2;
   
   let textIndex = texts.length - 1;
   let time = new Date();
